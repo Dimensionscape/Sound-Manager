@@ -20,6 +20,25 @@ var soundCollection:SoundCollection = new SoundCollection();
 soundCollection.add(cast {id:"<unique-id>",path:"<asset-path>"});
 ```
 
+The Json Data looks like this:
+```JSON
+{
+ "SoundCollection": [{
+		"id": "<unique-id>",
+		"path": "<asset-path>"
+	}, {
+		"id": "<unique-id>",
+		"path": "<asset-path>"
+	}, {
+		"id": "<unique-id>",
+		"path": "<asset-path>"
+	}, {
+		"id": "<unique-id>",
+		"path": "<asset-path>"
+	}]
+}
+```
+
 Fade in and out Background Music(BGM):
 ```haxe
 SoundManager.playBGM("<id>").fadeIn(<end-time-in-milliseconds>).fadeOut(<start-time-in-milliseconds>);
